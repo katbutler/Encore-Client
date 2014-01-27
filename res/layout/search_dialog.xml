@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/searchTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search_event"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/searchField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/searchTextView"
+        android:layout_below="@+id/searchTextView"
+        android:ems="10"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageView
+        android:id="@+id/searchBtn"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/searchField"
+        android:layout_toRightOf="@+id/searchField"
+        android:src="@drawable/search_grey" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/searchField"
+        android:layout_below="@+id/searchField"
+        android:choiceMode="singleChoice" >
+    </ListView>
+
+</RelativeLayout>

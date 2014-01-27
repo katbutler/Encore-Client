@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity" >
+
+    <ImageView
+        android:id="@+id/backroundImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/crowdblur1" />
+
+    <ImageView
+        android:id="@+id/encoreLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:maxHeight="@dimen/thumbnail_height"
+        android:maxWidth="@dimen/thumbnail_width"
+        android:scaleType="centerInside"
+        android:src="@drawable/hand72" />
+
+    <TextView
+        android:id="@+id/logInText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/encoreLogo"
+        android:layout_alignLeft="@+id/passwordField"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="79dp"
+        android:paddingLeft="@dimen/left_padding_login_text"
+        android:text="Login to Encore"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/log_in_text"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/emailField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/encoreLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/rounded_corners"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:text="kat.a.butler@gmail.com"
+        android:textColor="@android:color/black"
+        android:textStyle="italic"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/passwordField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/encoreLogo"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corners"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:text="passwd"
+        android:textStyle="italic"
+        android:textColor="@android:color/black"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/signupButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:background="@android:color/transparent"
+        android:text="@string/signUp"
+        android:textColor="#5FC2FF"
+        android:textSize="@dimen/signupText"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/loginButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:background="@android:color/transparent"
+        android:text="@string/login"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/signupText"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/loginButton"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

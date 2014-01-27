@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EA6735"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <ImageView
+        android:id="@+id/profilePic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:src="@drawable/anon_profile" />
+
+    <TextView
+        android:id="@+id/fullNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilePic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#4E4E4E" />
+
+    <TextView
+        android:id="@+id/bioText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fullNameText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="My Bio"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#4E4E4E" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/myLocationBtn"
+        android:layout_alignLeft="@+id/profilePic"
+        android:layout_marginBottom="11dp"
+        android:layout_marginLeft="16dp"
+        android:text="Set home location"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#4E4E4E" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/bioText"
+        android:layout_marginTop="61dp"
+        android:text="Set profile theme"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#4E4E4E" />
+
+    <ImageView
+        android:id="@+id/myLocationBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/editColoursBtn"
+        android:layout_below="@+id/editColoursBtn"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/location" />
+
+    <ImageView
+        android:id="@+id/editColoursBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/bioText"
+        android:layout_marginTop="50dp"
+        android:layout_toLeftOf="@+id/fullNameText"
+        android:src="@drawable/editcolors" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="14dp"
+        android:layout_toLeftOf="@+id/editColoursBtn"
+        android:src="@drawable/friends" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/mic" />
+
+    <TextView
+        android:id="@+id/eventsCount"
+        android:textColor="#4E4E4E" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignLeft="@+id/followingCount"
+        android:text="()"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/followingCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_toRightOf="@+id/imageView2"
+        android:text="()"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#4E4E4E" />
+
+</RelativeLayout>

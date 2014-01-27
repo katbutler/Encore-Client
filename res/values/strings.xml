@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Encore</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_follow">Follow New User</string>
+    <string name="action_search">Search</string>
+    <string name="search_event">Search for an event and select if you plan on attending</string>
+    
+    <string name="signUpName">Sign Up</string>
+    <string name="signUp"><u>Sign Up</u></string> 
+    <string name="signUpTitle">Sign up and start acccessing exclusive member-only event content in real time.</string> 
+    <string name="signUpDesc">Encore lets you BLAH BLAH BLAH</string> 
+    
+    <string name="login_background">Login backround</string>
+    <string name="login"><u>Login</u></string> 
+    
+    <string name="profile"><u>Profile</u></string>
+    <string name="profile_title"><u>Profile</u></string> 
+    <string name="friends_title"><u>Following</u></string> 
+    <string name="events_title"><u>Events</u></string> 
+    <string name="feed_title"><u>Feed</u></string> 
+    <string name="signup_title"><u>Sign Up</u></string>
+    <string name="login_title"><u>Login</u></string> 
+    
+    <string name="add_follower">Enter the email address of a user you would like to follow</string> 
+    
+
+</resources>

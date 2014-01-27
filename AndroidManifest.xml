@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.katbutler.encore"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" />
+ 	<uses-feature android:name="android.hardware.camera.autofocus" />
+ 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	
+    <application
+        android:debuggable="true"
+        android:allowBackup="true"
+        android:icon="@drawable/hand72"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.katbutler.encore.activities.LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+           android:name="com.katbutler.encore.activities.SignUpActivity"
+           android:label="@string/signUpName">
+           <intent-filter>
+               
+           </intent-filter>
+       </activity>
+       <activity
+           android:name="com.katbutler.encore.activities.ProfileActivity"
+           android:label="@string/profile" >
+           <intent-filter>
+               
+           </intent-filter>
+       </activity>
+       <activity android:name="com.katbutler.encore.activities.EncoreActivity" android:label="@string/profile"></activity>
+    </application>
+
+</manifest>

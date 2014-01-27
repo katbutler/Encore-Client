@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity" >
+    
+    <ImageView
+        android:id="@+id/backroundImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/crowd_light" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="25dp"
+        android:paddingTop="20dp"
+        android:text="@string/signUpTitle"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/fname"
+        android:hint="First Name"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_corners"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/lname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fname"
+        android:layout_below="@+id/fname"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/rounded_corners"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lname"
+        android:layout_below="@+id/lname"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_corners"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/email"
+        android:layout_alignRight="@+id/email"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/rounded_corners"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/signupButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:background="@android:color/transparent"
+        android:text="@string/signUp"
+        android:textColor="#5FC2FF"
+        android:textSize="@dimen/signupText"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/signUpProgress"
+        style="?android:attr/progressBarStyleLarge"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signupButton"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
